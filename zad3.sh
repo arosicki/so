@@ -13,9 +13,6 @@ if [ -z "$PASSWORD_STORE" ]; then
     fi
 
 elif [ ! -f "$PASSWORD_STORE" ]; then
-    if [ "$CHOICE" = "0" ]; then
-        exit 0
-    fi
     touch "$PASSWORD_STORE"
 fi
 
